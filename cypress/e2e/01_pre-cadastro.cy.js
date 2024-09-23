@@ -34,7 +34,7 @@ describe('Funcionalidade pré-cadastro', () => {
         cy.get('.woocommerce-error').should('contain', 'Sobrenome é um campo obrigatório.')
     });
     
-    it.only('Deve exibir mensagem de erro ao não inserir o nome', () => {
+    it('Deve exibir mensagem de erro ao não inserir o nome', () => {
         cy.get('#reg_email').type(faker.internet.email())
         cy.get('#reg_password').type(faker.internet.password())
         cy.get(':nth-child(4) > .button').click()
@@ -55,6 +55,6 @@ describe('Funcionalidade pré-cadastro', () => {
         cy.get('#account_first_name').clear()
         cy.get('#account_last_name').clear()
         cy.get('.woocommerce-Button').click()
-        cy.get('.woocommerce-error').should('contain', 'Nome é um campo obrigatório.')
+        cy.get('.woocommerce-error').should('contain', 'Nome é um campo obrigatório.').should('contain', 'Sobrenome é um campo obrigatório.')
     });
 })
