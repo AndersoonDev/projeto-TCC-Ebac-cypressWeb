@@ -1,0 +1,42 @@
+[
+    {
+        "nome":"João",
+        "sobrenome":"Silva",
+        "nomeEmpresa":"Loja EBAC",
+        "país":"Brasil",
+        "rua":"Avenida Paulista",
+        "numero":"1000",
+        "cidade":"São Paulo",
+        "estado":"São Paulo",
+        "cep":"12345-111",
+        "telefone":"(11) 99999-9999",
+        "email":"joão@ebac.com.br"
+    },
+    {
+        "nome":"Felipe",
+        "sobrenome":"Santos",
+        "nomeEmpresa":"Loja EBAC",
+        "país":"Brasil",
+        "rua":"Rua Paulista",
+        "numero":"125",
+        "cidade":"São Paulo",
+        "estado":"São Paulo",
+        "cep":"12345-000",
+        "telefone":"(11) 99999-1111",
+        "email":"felipe@ebac.com.br"
+    },
+    {
+        "nome":"Diego",
+        "sobrenome":"Luz",
+        "nomeEmpresa":"Loja EBAC",
+        "país":"Brasil",
+        "rua":"Rua Salomão",
+        "numero":"350",
+        "cidade":"São Paulo",
+        "estado":"São Paulo",
+        "cep":"12345-123",
+        "telefone":"(11) 99999-0000",
+        "email":"diego@ebac.com.br"
+    }
+    
+]
