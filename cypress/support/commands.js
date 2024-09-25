@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
-import { faker } from '@faker-js/faker'
+
 
 Cypress.Commands.add('preCadastro', (email, senha, nome, sobrenome) => {
   cy.get('#reg_email').type(email)
@@ -45,3 +45,19 @@ Cypress.Commands.add('login', (email, senha) => {
     cy.get('.woocommerce-form > .button').click()
     cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, aluno_ebac')
   });
+
+  Cypress.Commands.add('cadastroFaturamento', (nome, sobrenome, país, endereco, numero, cidade, estado, cep) => {
+    cy.get('.woocommerce-MyAccount-navigation-link--edit-address > a').click()
+    cy.get(':nth-child(2) > .title > h3').should('be.visible')
+    cy.get(':nth-child(2) > .title > .edit').click()
+    cy.get('#shipping_first_name').clear().type(nome)
+    cy.get('#shipping_last_name').clear().type(sobrenome)
+    cy.get('#select2-shipping_country-container').click().type(país +'{enter}')
+    cy.get('#shipping_address_1').clear().type(endereco)
+    cy.get('#shipping_address_2').clear().type(numero)
+    cy.get('#shipping_city').clear().type(cidade)
+    cy.get('#select2-shipping_state-container').click().type(estado)
+    cy.get('#shipping_postcode').clear().type(cep, {force: true})
+    cy.get('.button').click()
+    cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
+    });
