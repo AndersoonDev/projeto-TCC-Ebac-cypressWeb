@@ -1,8 +1,8 @@
 /// <reference types='cypress' />
 
 import { faker } from '@faker-js/faker'
+
 let dados 
-// = require('../fixtures/endereco.json')
 
 describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
     beforeEach(() => {
