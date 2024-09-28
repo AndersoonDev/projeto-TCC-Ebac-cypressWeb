@@ -8,13 +8,12 @@ describe('Funcionalidade carrinho', () => {
 })
 
     it.only('Deve selecionar um produto da loja', () => {
-        cy.get('#primary-menu > .menu-item-629 > [href="http://lojaebac.ebaconline.art.br/produtos/"]').click()
-        cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
+        // cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
+        cy.get("[class='product-block grid']").contains('Aether Gym Pant').click()
         cy.get('.product_title').should('be.visible')
     });
 
     it('Deve selecionar um produto da loja e colocar na lista de desejos', () => {
-        cy.get('#primary-menu > .menu-item-629 > [href="http://lojaebac.ebaconline.art.br/produtos/"]').click()
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
         cy.get('.summary > .yith-wcwl-add-to-wishlist > .yith-wcwl-add-button').click()
         cy.get(':nth-child(2) > .text-skin > .count_wishlist').click()
@@ -48,7 +47,6 @@ describe('Funcionalidade carrinho', () => {
     });
 
     it('Deve adicionar um item ao carrinho e fazer checkout com sucesso', () => {
-        cy.get('#primary-menu > .menu-item-629 > [href="http://lojaebac.ebaconline.art.br/produtos/"]').click()
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
         cy.get('.button-variable-item-36').click()
         cy.get('.button-variable-item-Green').click()

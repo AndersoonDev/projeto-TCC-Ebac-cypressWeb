@@ -9,8 +9,8 @@ const numero = Math.floor(Math.random() * 3)
 describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
     beforeEach(() => {
         cy.visit('minha-conta');
-        cy.fixture('perfil').then(usuario => {
-            cy.login(usuario.email, usuario.senha)
+        cy.fixture('perfil').then(dados => {
+            cy.login(dados.email, dados.senha)
         });
         
     });
@@ -32,7 +32,7 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
         
     });
 
-    it('Deve editar cadastro de faturamento com sucesso - usando arquivo de dadosEnderecoEndereco', () => {
+    it('Deve editar cadastro de faturamento com sucesso - usando arquivo de dados', () => {
        
         cy.get('.woocommerce-MyAccount-navigation-link--edit-address > a').click()
         cy.get(':nth-child(2) > .title > h3').should('be.visible')

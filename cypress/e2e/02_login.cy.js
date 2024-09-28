@@ -20,6 +20,15 @@ describe('Funcionalidade Login', () => {
         cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, aluno_ebac')
     });
 
+    it('Deve fazer login com sucesso - Usando fixtures', () => {
+        cy.fixture('perfil').then(dados => {
+            cy.get('#username').type(dados.email)
+            cy.get('#password').type(dados.senha,{log: false})
+            cy.get('.woocommerce-form > .button').click()
+            cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, aluno_ebac')
+        })
+    });
+
     it('Deve exibir uma mensagem de erro ao inserir email inválido', () => {
         cy.get('#username').type('111111@teste.com')
         cy.get('#password').type('teste@teste.com',{log: false})
