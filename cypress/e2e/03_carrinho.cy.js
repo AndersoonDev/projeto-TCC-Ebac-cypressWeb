@@ -5,7 +5,7 @@ describe('Funcionalidade carrinho', () => {
     beforeEach(() => {
         cy.visit('minha-conta');
         cy.login('aluno_ebac@teste.com', 'teste@teste.com');
-});
+})
 
     it.only('Deve selecionar um produto da loja', () => {
         cy.get('#primary-menu > .menu-item-629 > [href="http://lojaebac.ebaconline.art.br/produtos/"]').click()
