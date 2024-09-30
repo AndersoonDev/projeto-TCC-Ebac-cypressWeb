@@ -11,8 +11,7 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
         cy.visit('minha-conta');
         cy.fixture('perfil').then(dados => {
             cy.login(dados.email, dados.senha)
-        });
-        
+        });        
     });
 
     it('Deve fazer cadastro de entrega com sucesso', () => {
