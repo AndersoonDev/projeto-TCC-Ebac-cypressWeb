@@ -1,8 +1,8 @@
 /// <reference types='cypress' />
 
 import { faker } from '@faker-js/faker' 
-import EnderecoPage from '../support/page-objects/endereco.page'
-const dadosEndereco = require('../fixtures/endereco.json')
+import EnderecoPage from '../../support/page-objects/endereco.page'
+const dadosEndereco = require('../../fixtures/endereco.json')
 const numero = Math.floor(Math.random() * 3)
 
 
@@ -43,8 +43,7 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
             dadosEndereco[numero].estado,
             dadosEndereco[numero].cep
         )
-    });
-    
+    });    
 
     it('Deve editar cadastro de faturamento com sucesso - usando Fixture', () => {
        
@@ -82,8 +81,7 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
         )
     });
 
-
-    it.only('Deve exibir um erro ao inserir cep inválido', () => {
+    it('Deve exibir um erro ao inserir cep inválido', () => {
         cy.get('.woocommerce-MyAccount-navigation-link--edit-address > a').click()
         cy.get(':nth-child(2) > .title > h3').should('be.visible')
         cy.get(':nth-child(2) > .title > .edit').click()
