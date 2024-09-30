@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: Cypress testing
 on: push
 jobs:
   cypress-run:
@@ -9,7 +9,4 @@ jobs:
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
-        uses: cypress-io/github-action@v6       
-        
-        # env:
-        #   CYPRESS_RECORD_KEY : 41db8000-9dbc-458d-8d71-f6d0f4953aa6
+        uses: cypress-io/github-action@v6
