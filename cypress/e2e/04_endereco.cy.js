@@ -1,8 +1,8 @@
 /// <reference types='cypress' />
 
 import { faker } from '@faker-js/faker' 
-import EnderecoPage from '../../support/page-objects/endereco.page'
-const dadosEndereco = require('../../fixtures/endereco.json')
+import EnderecoPage from '../support/page-objects/endereco.page'
+const dadosEndereco = require('../fixtures/endereco.json')
 const numero = Math.floor(Math.random() * 3)
 
 
