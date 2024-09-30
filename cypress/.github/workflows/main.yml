@@ -17,3 +17,6 @@ jobs:
         with:          
           wait-on: 'http://lojaebac.ebaconline.art.br'
           record: true
+        
+        # env:
+        #   CYPRESS_RECORD_KEY : 41db8000-9dbc-458d-8d71-f6d0f4953aa6
