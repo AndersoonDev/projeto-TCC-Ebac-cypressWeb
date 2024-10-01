@@ -13,8 +13,8 @@ describe('Funcionalidade carrinho', () => {
     });
 
     it('Deve selecionar um produto da loja e colocar na lista de desejos', () => {
-        cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
 
+        cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
         cy.get('.topbar-inner > :nth-child(1) > .list-inline > :nth-child(2) > a')
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
         cy.get('.summary > .yith-wcwl-add-to-wishlist > .yith-wcwl-add-button').click()
@@ -24,11 +24,9 @@ describe('Funcionalidade carrinho', () => {
         cy.get(':nth-child(2) > .text-skin > .count_wishlist').should('contain', '0')
     });
 
-    it('Deve adicionar um item ao carrinho com sucesso', () => {
-        
+    it('Deve adicionar um item ao carrinho com sucesso', () => {  
 
         cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
-
         cy.get('#primary-menu > .menu-item-629 > [href="http://lojaebac.ebaconline.art.br/produtos/"]').click()
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
         cy.get('.button-variable-item-36').click()
@@ -36,15 +34,14 @@ describe('Funcionalidade carrinho', () => {
         cy.get('.input-text').clear().type('1')
         cy.get('.single_add_to_cart_button').click();
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', '1')
-
         cy.get('.dropdown-toggle > .mini-cart-items').click()
         cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()
         cy.get('.remove > .fa').click()
     });
 
     it('Deve adicionar um item ao carrinho e excluir com sucesso', () => {
-        cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
 
+        cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
         cy.get('#primary-menu > .menu-item-629 > [href="http://lojaebac.ebaconline.art.br/produtos/"]').click()
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
         cy.get('.button-variable-item-36').click()
@@ -59,8 +56,8 @@ describe('Funcionalidade carrinho', () => {
     });
 
     it('Deve adicionar um item ao carrinho e fazer checkout com sucesso', () => {
-        cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
 
+        cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
         cy.get('.button-variable-item-36').click()
         cy.get('.button-variable-item-Green').click()
