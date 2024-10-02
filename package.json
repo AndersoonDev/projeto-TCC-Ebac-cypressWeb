@@ -9,7 +9,7 @@
     "cy:run": "npx cypress run --browser chrome"
   },
   "keywords": [],
-  "author": "",
+  "author": "Anderson Silva",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^9.0.3",
