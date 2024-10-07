@@ -1,6 +1,6 @@
 # Projeto Cypress End-to-End
 
-### TCC EbacShop Projeto final de conclusão do curso da EBAC de Teste de Software
+### TCC EbacShop Projeto final de conclusão do curso EBAC: Teste de Software
 
 **Este repositório contém um projeto de testes end-to-end (E2E) automatizados utilizando a ferramenta Cypress. O objetivo deste projeto é garantir a qualidade e a confiabilidade do sistema através de testes automatizados de ponta a ponta, cobrindo diversos cenários de interação do usuário com a aplicação.**
 
