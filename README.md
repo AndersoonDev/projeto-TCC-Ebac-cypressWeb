@@ -57,7 +57,9 @@ npx cypress run
 
 ## Arquivos de Suporte e Fixação
 **fixtures/:** Armazena dados fixos em arquivos JSON, que são usados para simular inputs e facilitar testes com dados repetitivos.
+
 **support/commands.js:** Define comandos customizados do Cypress, como **cy.login()** para simplificar a autenticação em múltiplos testes.
+
 **support/page-objects/endereco.page.js:** Define comandos customizados do Cypress, como **EnderecoPage.editarEnderecoFaturamento()** para simplificar a autenticação em múltiplos testes.
 
 ## Relatórios de Teste
