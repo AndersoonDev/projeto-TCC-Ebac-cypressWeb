@@ -29,7 +29,7 @@ describe('Funcionalidade carrinho', () => {
         cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
         cy.get('#primary-menu > .menu-item-629 > [href="http://lojaebac.ebaconline.art.br/produtos/"]').click()
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
-        cy.get('.button-variable-item-36').click()
+        cy.get('.button-variable-item-33').click()
         cy.get('.button-variable-item-Green').click()
         cy.get('.input-text').clear().type('1')
         cy.get('.single_add_to_cart_button').click();
@@ -44,7 +44,7 @@ describe('Funcionalidade carrinho', () => {
         cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
         cy.get('#primary-menu > .menu-item-629 > [href="http://lojaebac.ebaconline.art.br/produtos/"]').click()
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
-        cy.get('.button-variable-item-36').click()
+        cy.get('.button-variable-item-33').click()
         cy.get('.button-variable-item-Green').click()
         cy.get('.input-text').clear().type('1')
         cy.get('.single_add_to_cart_button').click();
@@ -59,7 +59,7 @@ describe('Funcionalidade carrinho', () => {
 
         cy.loginProdutos('aluno_ebac@teste.com', 'teste@teste.com');
         cy.get('.post-3073 > .product-block > .block-inner > .image > .product-image > .image-hover').click()
-        cy.get('.button-variable-item-36').click()
+        cy.get('.button-variable-item-33').click()
         cy.get('.button-variable-item-Green').click()
         cy.get('.input-text').clear().type('1')
         cy.get('.single_add_to_cart_button').click();
