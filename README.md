@@ -56,11 +56,11 @@ npx cypress run
 ```
 
 ## Arquivos de Suporte e Fixação
-**fixtures/:** Armazena dados fixos em arquivos JSON, que são usados para simular inputs e facilitar testes com dados repetitivos.
+- **fixtures/:** Armazena dados fixos em arquivos JSON, que são usados para simular inputs e facilitar testes com dados repetitivos.
 
-**support/commands.js:** Define comandos customizados do Cypress, como **cy.login()** para simplificar a autenticação em múltiplos testes.
+- **support/commands.js:** Define comandos customizados do Cypress, como **cy.login()** para simplificar a autenticação em múltiplos testes.
 
-**support/page-objects/endereco.page.js:** Define comandos customizados do Cypress, como **EnderecoPage.editarEnderecoFaturamento()** para simplificar a autenticação em múltiplos testes.
+- **support/page-objects/endereco.page.js:** Define comandos customizados do Cypress, como **EnderecoPage.editarEnderecoFaturamento()** para simplificar a autenticação em múltiplos testes.
 
 ## Relatórios de Teste
 Os relatórios dos testes são gerados utilizando Mochawesome e estão disponíveis na pasta **reports/html/**. Esses relatórios incluem uma visão detalhada de cada execução, com status de sucesso ou falha para cada teste.
