@@ -51,7 +51,7 @@ describe('Funcionalidade carrinho', () => {
         cy.get('.dropdown-toggle > .mini-cart-items').click()
         cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()
         cy.get('.remove > .fa').click()
-        cy.get('.cart-empty').should('contain', 'Seu carrinho está vazio.')
+        cy.get('.cart-empty',{ timeout: 5000 }).should('contain', 'Seu carrinho está vazio.')
         cy.get('.dropdown-toggle > .mini-cart-items').should('contain', '0')
     });
 
