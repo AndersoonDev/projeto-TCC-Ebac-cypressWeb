@@ -9,11 +9,16 @@
 
 ## Framework e Bibliotecas utilizadas
 **Node.js:** Ambiente de execução para JavaScript no lado do servidor.
+
 **Cypress:** Ferramenta principal para automação de testes.
+
 **JavaScript:** Linguagem de programação usada para desenvolver os testes.
-Node.js: Ambiente de execução para JavaScript no lado do servidor.
+**Node.js:** Ambiente de execução para JavaScript no lado do servidor.
+
 **faker.js:** Biblioteca para geração de dados aleatórios, simulando usuários e cenários de teste.
+
 **Mochawesome:** Biblioteca de geração de relatórios em HTML para os testes automatizados.
+
 **GitHub Actions:** Utilizado para configurar pipelines de integração contínua (CI), executando os testes automaticamente a cada novo commit.
 
 ## Pré-requisitos
@@ -28,21 +33,21 @@ Node.js: Ambiente de execução para JavaScript no lado do servidor.
 git clone https://github.com/AndersoonDev/projeto-TCC-Ebac-cypressWeb.git
 ```
 2. Acesse a pasta do projeto:
-```bash
+``` bash
 cd seu-projeto
 ```
 3. Instale as dependências:
-```bash
+``` bash
 npm install
 ```
 ## Como Executar os Testes
 
 1. Para rodar os testes em modo interativo:
-```bash
+``` bash
 npx cypress open
 ```
 2. Para rodar os testes em modo headless (no terminal):
-```bash
+``` bash
 npx cypress run
 ```
 
