@@ -1,5 +1,5 @@
 # Projeto Cypress End-to-End
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
+### ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)![cypress](https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e)![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)![Mocha](https://img.shields.io/badge/-mocha-%238D6748?style=for-the-badge&logo=mocha&logoColor=white)
 
 ### TCC EbacShop Projeto final de conclusão do curso EBAC: Teste de Software
 
@@ -17,11 +17,9 @@
 - **GitHub Actions:** Utilizado para configurar pipelines de integração contínua (CI), executando os testes automaticamente a cada novo commit.
 
 ## Cenários Testados
-
-Os cenários foram organizados em três categorias: Caminho Feliz, fluxox Alternativos e Negativos, garantindo uma cobertura de testes ampla para diferentes situações de uso.
+Os cenários foram organizados em três categorias: Caminho feliz, fluxos alternativos e negativos, garantindo uma cobertura de testes ampla para diferentes situações de uso.
 
 ## Funcionalidades Testadas
-
 - Pré-cadastro
 - Login
 - Carrinho
@@ -35,7 +33,6 @@ Os cenários foram organizados em três categorias: Caminho Feliz, fluxox Altern
 - Git
 
 ## Instalação e Configuração
-
 1. Clone o repositório:
 ``` bash
 git clone https://github.com/AndersoonDev/projeto-TCC-Ebac-cypressWeb.git
@@ -49,7 +46,6 @@ cd seu-projeto
 npm install
 ```
 ## Como Executar os Testes
-
 1. Para rodar os testes em modo interativo:
 ``` bash
 npx cypress open
@@ -60,7 +56,6 @@ npx cypress run
 ```
 
 ## Arquivos de Suporte e Fixação
-
 **fixtures/:** Armazena dados fixos em arquivos JSON, que são usados para simular inputs e facilitar testes com dados repetitivos.
 **support/commands.js:** Define comandos customizados do Cypress, como **cy.login()** para simplificar a autenticação em múltiplos testes.
 **support/page-objects/endereco.page.js:** Define comandos customizados do Cypress, como **EnderecoPage.editarEnderecoFaturamento()** para simplificar a autenticação em múltiplos testes.
