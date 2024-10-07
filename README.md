@@ -8,18 +8,13 @@
 **Ebac Shop**: http://lojaebac.ebaconline.art.br/
 
 ## Framework e Bibliotecas utilizadas
-**Node.js:** Ambiente de execução para JavaScript no lado do servidor.
-
-**Cypress:** Ferramenta principal para automação de testes.
-
-**JavaScript:** Linguagem de programação usada para desenvolver os testes.
-**Node.js:** Ambiente de execução para JavaScript no lado do servidor.
-
-**faker.js:** Biblioteca para geração de dados aleatórios, simulando usuários e cenários de teste.
-
-**Mochawesome:** Biblioteca de geração de relatórios em HTML para os testes automatizados.
-
-**GitHub Actions:** Utilizado para configurar pipelines de integração contínua (CI), executando os testes automaticamente a cada novo commit.
+- **Node.js:** Ambiente de execução para JavaScript no lado do servidor.
+- **Cypress:** Ferramenta principal para automação de testes.
+- **JavaScript:** Linguagem de programação usada para desenvolver os testes.
+- **Node.js:** Ambiente de execução para JavaScript no lado do servidor.
+- **faker.js:** Biblioteca para geração de dados aleatórios, simulando usuários e cenários de teste.
+- **Mochawesome:** Biblioteca de geração de relatórios em HTML para os testes automatizados.
+- **GitHub Actions:** Utilizado para configurar pipelines de integração contínua (CI), executando os testes automaticamente a cada novo commit.
 
 ## Pré-requisitos
 - Node.js (>= versão 14)
