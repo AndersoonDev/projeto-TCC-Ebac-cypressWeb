@@ -7,7 +7,7 @@ describe('Funcionalidade pré-cadastro', () => {
         cy.visit('minha-conta')
     })
 
-    it.only('Deve completar o pre-cadastro com sucesso', () => {
+    it('Deve completar o pre-cadastro com sucesso', () => {
         cy.get('#reg_email').type(faker.internet.email())
         cy.get('#reg_password').type(faker.internet.password())
         cy.get(':nth-child(4) > .button').click()

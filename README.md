@@ -7,7 +7,7 @@
 
 **Ebac Shop**: http://lojaebac.ebaconline.art.br/
 
-## Framework e Bibliotecas utilizadas
+## Frameworks e Bibliotecas utilizados
 - **Node.js:** Ambiente de execução para JavaScript no lado do servidor.
 - **Cypress:** Ferramenta principal para automação de testes.
 - **JavaScript:** Linguagem de programação usada para desenvolver os testes.
@@ -15,6 +15,19 @@
 - **faker.js:** Biblioteca para geração de dados aleatórios, simulando usuários e cenários de teste.
 - **Mochawesome:** Biblioteca de geração de relatórios em HTML para os testes automatizados.
 - **GitHub Actions:** Utilizado para configurar pipelines de integração contínua (CI), executando os testes automaticamente a cada novo commit.
+
+## Cenários Testados
+
+Os cenários foram organizados em três categorias: Caminho Feliz, fluxox Alternativos e Negativos, garantindo uma cobertura de testes ampla para diferentes situações de uso.
+
+## Funcionalidades Testadas
+
+- Pré-cadastro
+- Login
+- Carrinho
+- Produtos
+- Faturamento
+- Cadastrar Endereço
 
 ## Pré-requisitos
 - Node.js (>= versão 14)
@@ -24,7 +37,7 @@
 ## Instalação e Configuração
 
 1. Clone o repositório:
-```bash
+``` bash
 git clone https://github.com/AndersoonDev/projeto-TCC-Ebac-cypressWeb.git
 ```
 2. Acesse a pasta do projeto:
