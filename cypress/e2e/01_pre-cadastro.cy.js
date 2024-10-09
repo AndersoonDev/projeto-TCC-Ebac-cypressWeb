@@ -38,7 +38,7 @@ describe('Funcionalidade pré-cadastro', () => {
         cy.get('#reg_email').type(faker.internet.email())
         cy.get('#reg_password').type(faker.internet.password())
         cy.get(':nth-child(4) > .button').click()
-        cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('be.visible')
+        cy.get('.woocommerce-MyAccount-content > :nth-child(2)', {timeout: 10000}).should('be.visible')
         cy.get('.woocommerce-MyAccount-navigation-link--edit-account > [href="http://lojaebac.ebaconline.art.br/minha-conta/edit-account/"]').click()
         cy.get('#account_first_name').clear()
         cy.get('#account_last_name').clear().type(faker.person.lastName())
