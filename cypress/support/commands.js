@@ -43,7 +43,7 @@ Cypress.Commands.add('login', (email, senha) => {
     cy.get('#username').type(email)
     cy.get('#password').type(senha,{log: false})
     cy.get('.woocommerce-form > .button').click()
-    cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, aluno_ebac')
+    cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain', 'Olá, Anderson')
   });
 
   Cypress.Commands.add('loginProdutos', (email, senha) => {
